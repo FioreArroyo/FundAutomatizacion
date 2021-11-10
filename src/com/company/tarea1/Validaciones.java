@@ -4,40 +4,28 @@ import java.util.regex.Pattern;
 
 public class Validaciones {
     public static Resultado esValido(String monto, String montoFormato) {
-        Resultado r = new Resultado();
+        Resultado res = new Resultado();
         if (!esNumero(monto)){
-            r.esValido = false;
-            r.mensaje = "El monto debe ser numérico. Utilice una coma para separar los miles";
+            res.esValido = false;
+            res.mensaje = "El monto debe ser numérico. Utilice una coma para separar los miles";
         }
         else  if (!esMtoPositivo(monto)){
-            r.esValido = false;
-            r.mensaje = "El monto debe ser mayor a 0";
+            res.esValido = false;
+            res.mensaje = "El monto debe ser mayor a 0";
         }
         else  if (!maximoMtoPermitido(monto)){
-            r.esValido = false;
-            r.mensaje = "El monto debe ser menor a 999,999,999.99";
+            res.esValido = false;
+            res.mensaje = "El monto debe ser menor a 999,999,999.99";
         }
         else  if (!esFormatoValido(montoFormato)){
-            r.esValido = false;
-            r.mensaje = "Solamente se permiten 2 decimales";
+            res.esValido = false;
+            res.mensaje = "Solamente se permiten 2 decimales";
         }
         else {
-            r.esValido = true;
-            r.mensaje = null;
+            res.esValido = true;
+            res.mensaje = null;
         }
-
-        return  r;
-    }
-
-    public static boolean esFormatoValido(String str)
-    {
-
-        if (Pattern.matches("\\d{1,9},\\d{1,2}", str)) {
-            return  true;
-        }
-        else {
-            return  false;
-        }
+        return  res;
     }
 
 
@@ -88,6 +76,17 @@ public class Validaciones {
         catch(NumberFormatException nfe)
         {
             return false;
+        }
+    }
+
+    private static boolean esFormatoValido(String str)
+    {
+
+        if (Pattern.matches("\\d{1,9},\\d{1,2}", str)) {
+            return  true;
+        }
+        else {
+            return  false;
         }
     }
 }

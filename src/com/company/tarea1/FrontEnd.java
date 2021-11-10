@@ -28,7 +28,7 @@ public class FrontEnd extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String monto = txtMonto.getText();
-                String Convertir = letraNum.Convertir(monto, true);
+                String Convertir = letraNum.Convertir(monto);
                 JOptionPane.showMessageDialog(null, Convertir);
             }
         });

@@ -10,9 +10,7 @@ public class Implementacion {
             "setecientos ", "ochocientos ", "novecientos "};
 
 
-
-
-    public String  Convertir(String numero, boolean mayusculas) {
+    public String  Convertir(String numero) {
         String numeroEnLetras = "";
         String parte_decimal;
 
@@ -48,21 +46,12 @@ public class Implementacion {
             } else {//sino unidades -> 9
                 numeroEnLetras = getUnidades(Num[0]);
             }
-
-            //devuelve el resultado en mayusculas o minusculas
-            if (mayusculas) {
-                return (numeroEnLetras + parte_decimal).toUpperCase();
-            } else {
-                return (numeroEnLetras + parte_decimal);
-            }
+            return (numeroEnLetras + parte_decimal).toUpperCase();
         }
-
         else
         {
             return resultado.mensaje;
         }
-
-
     }
 
 
