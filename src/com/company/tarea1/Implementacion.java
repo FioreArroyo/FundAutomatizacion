@@ -14,10 +14,13 @@ public class Implementacion {
         String numeroEnLetras = "";
         String parte_decimal;
 
-        //si el numero viene con separador de miles elimina la coma.
-        String numeroSinSeparadorDeMiles =  formatearNumero(numero);
+        //si el numero viene negativo, elimina el (-).
+        numero= numero.replace("-", "");
 
-        //si el numero utiliza (.) en lugar de (,) -> se reemplaza
+        //si el numero viene con separador de miles (,) elimina la coma.
+        String numeroSinSeparadorDeMiles = numero.replace(",", "");
+
+        //si el numero utiliza (.) en lugar de (,) -> se reemplaza, para manejar los decimales con coma
         numero= numeroSinSeparadorDeMiles.replace(".", ",");
 
         // Si el numero viene sin decimales asigna un ,00
@@ -52,11 +55,6 @@ public class Implementacion {
         {
             return resultado.mensaje;
         }
-    }
-
-
-    private static String formatearNumero(String numero){
-        return  numero.replace(",", "");
     }
 
     /* funciones para convertir los numeros a letras */
