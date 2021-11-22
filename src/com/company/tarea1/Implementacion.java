@@ -28,6 +28,8 @@ public class Implementacion {
             numero = numero + ",00";
         }
 
+        numero = numero.replaceAll("^0+", "");
+
         Resultado resultado =  Validaciones.esValido(numeroSinSeparadorDeMiles, numero);
         if (resultado.esValido){
             String Num[] = numero.split(",");

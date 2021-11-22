@@ -17,7 +17,7 @@ public class FrontEnd extends JFrame {
         Implementacion letraNum = new Implementacion();
 
         //CREATE COMPONENTS
-        JLabel lbldesc = new JLabel("Utilice un punto para los decimales.");
+        JLabel lbldesc = new JLabel("Utilice un punto para los decimales y comas para separar los miles");
         JLabel lblMonto = new JLabel("Digite el Monto:");
         JTextField txtMonto = new JTextField();
 
