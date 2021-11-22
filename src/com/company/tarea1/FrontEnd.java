@@ -17,7 +17,8 @@ public class FrontEnd extends JFrame {
         Implementacion letraNum = new Implementacion();
 
         //CREATE COMPONENTS
-        JLabel lblMonto = new JLabel("Monto");
+        JLabel lbldesc = new JLabel("Utilice un punto para los decimales.");
+        JLabel lblMonto = new JLabel("Digite el Monto:");
         JTextField txtMonto = new JTextField();
 
         JButton convertir = new JButton("Convertir");
@@ -41,6 +42,7 @@ public class FrontEnd extends JFrame {
         });
 
         //ADD INTO THE CONTAINER
+        super.add(lbldesc);
         super.add(lblMonto);
         super.add(txtMonto);
         super.add(convertir);

@@ -36,9 +36,7 @@ public class Implementacion {
             parte_decimal = "con "+ Num[1] + " centimos";
 
             //se convierte el numero a numeroEnLetras
-            if (Integer.parseInt(Num[0]) == 0) {//si el valor es cero
-                numeroEnLetras = "cero ";
-            } else if (Integer.parseInt(Num[0]) > 999999) {//si es millon
+            if (Integer.parseInt(Num[0]) > 999999) {//si es millon
                 numeroEnLetras = getMillones(Num[0]);
             } else if (Integer.parseInt(Num[0]) > 999) {//si es miles
                 numeroEnLetras = getMiles(Num[0]);

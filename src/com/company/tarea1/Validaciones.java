@@ -7,7 +7,7 @@ public class Validaciones {
         Resultado res = new Resultado();
         if (!esNumero(monto)){
             res.esValido = false;
-            res.mensaje = "El monto debe ser numérico. Utilice una coma para separar los miles";
+            res.mensaje = "El monto debe ser numérico.";
         }
         else  if (!esMtoPositivo(monto)){
             res.esValido = false;
@@ -89,5 +89,8 @@ public class Validaciones {
             return  false;
         }
     }
+
+
+
 }
 
