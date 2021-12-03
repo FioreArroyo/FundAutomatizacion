@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Las siguientes clases hacen pruebas para la Persona y Profesion</a></td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi">Regression Smoke Other </td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Las siguientes clases hacen pruebas para la Persona y Profesion &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">TestProfesion</td><td><a href="#m1"><b>crearProfesion</b> (Smoke) </a></td><td class="numi">1</td><td>1638492630658</td><td class="numi">16</td></tr><tr class="passedodd"><td><a href="#m2"><b>obtenerEjerceLugar</b> (Smoke) </a></td><td class="numi">1</td><td>1638492630674</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="5">TestPersona</td><td><a href="#m3"><b>obtenerProfesion</b> (Smoke) </a></td><td class="numi">1</td><td>1638492630674</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m4"><b>obtenerNombre</b> (Smoke) </a></td><td class="numi">1</td><td>1638492630674</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m5"><b>validarEdad</b> (Other) </a></td><td class="numi">1</td><td>1638492630674</td><td class="numi">16</td></tr><tr class="passedeven"><td><a href="#m6"><b>validarNombre</b> (Other) </a></td><td class="numi">1</td><td>1638492630690</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m7"><b>crearPersona</b> (Smoke) </a></td><td class="numi">1</td><td>1638492630674</td><td class="numi">0</td></tr>
+</table>
+<h1>Las siguientes clases hacen pruebas para la Persona y Profesion</h1>
+<h2 id="m1">TestProfesion:crearProfesion</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>profesor</td>
+</tr>
+<tr><td>
+Se creo la profesion<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">TestProfesion:obtenerEjerceLugar</h2>
+<div>
+La persona ejerce en una: Academia<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">TestPersona:obtenerProfesion</h2>
+<div>
+La profesion de la persona es: profesor<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">TestPersona:obtenerNombre</h2>
+<div>
+El nombre es de la persona es: Fiorella<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">TestPersona:validarEdad</h2>
+<div>
+Vamos a validar la Edad<br/>
+VP Pass: La edad es valida<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">TestPersona:validarNombre</h2>
+<div>
+Vamos a validar si el nombre es correcto<br/>
+VP Pass: El nombre es valido<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">TestPersona:crearPersona</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>Fiorella</td>
+<td>31</td>
+<td>profesor</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
