@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Tarea Programada 3(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://demoqa.com/forms"/>
+    <classes>
+      <class name="ProbarAplicacion">
+        <methods>
+          <include name="liberarBrowser"/>
+          <include name="lanzarBrowser"/>
+          <include name="validarTituloPagina"/>
+        </methods>
+      </class> <!-- ProbarAplicacion -->
+    </classes>
+  </test> <!-- Tarea Programada 3(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
