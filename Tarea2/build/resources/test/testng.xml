@@ -3,9 +3,9 @@
 <suite name="Sistema de Prueba - Tarea Programada 2">
     <test verbose="2" preserve-order="true"
           name="Las siguientes clases hacen pruebas para la Persona y Profesion">
-        <parameter name="nombre" value="Fiorella"/>
+        <parameter name="nombre" value="Fiorella Prueba Prueba"/>
         <parameter name="edad" value="31"/>
-        <parameter name="profesion" value="profesor"/>
+        <parameter name="profesion" value="estudiante"/>
         <groups>
             <run>
                 <include name="Other"/>
